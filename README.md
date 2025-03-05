@@ -1,8 +1,8 @@
-###  DATE: 
+###  DATE: 05.03.2025
 
-###  NAME: 
-###  ROLL NO :
-###  DEPARTMENT: 
+###  NAME: HEMA LOKITHA P
+###  ROLL NO :212223110014
+###  DEPARTMENT: BE(CSE(IOT))
 
 
 
@@ -86,14 +86,32 @@ The main features of LPC2148 include the following.
 
 
 ## STM 32 CUBE PROGRAM :
-
+```
+#include "main.h"
+#include "stdio.h"
+int main(void)
+{
+  while (1)
+  {
+    HAL_GPIO_WritePin(GPIOA,GPIO_PIN_0, GPIO_PIN_RESET);
+    HAL_Delay(1000);
+    HAL_GPIO_WritePin(GPIOA,GPIO_PIN_0, GPIO_PIN_SET);
+    HAL_Delay(1000);
+  }
+}
+```
 
 
 
 
 ## OUTPUT  :
- 
- 
+
+# LED ON
+ ![led on](https://github.com/user-attachments/assets/c1c34a0d-489b-4e01-a02f-0dc5133ed1bc)
+
+# LED OFF
+ ![led off](https://github.com/user-attachments/assets/b068854c-73e2-4148-80ea-c224e80439e3)
+
  
  
 ## Result :
